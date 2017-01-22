@@ -1,0 +1,258 @@
+@import "reset.css";
+@import "base.css";
+@import "button.css";
+/* Colors */
+/* Accents */
+/* Box-Shadow */
+/* Mixins */
+/* LESS*/
+body {
+  background-color: #303030;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  min-width: 320px;
+  padding: 0;
+}
+body > .container {
+  height: auto;
+  min-height: 100%;
+  position: relative;
+}
+body a {
+  color: #2196F3;
+}
+header {
+  background-color: #212121;
+  height: 100px;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
+header .icon {
+  display: inline-block;
+  margin-left: 50px;
+}
+header .icon img {
+  height: 3em;
+  vertical-align: -0.2em;
+}
+@media (max-width: 600px) {
+  header .icon img {
+    height: 2em;
+  }
+}
+@media (max-width: 600px) {
+  header .icon {
+    margin-left: 20px;
+  }
+}
+header .title {
+  color: #2196F3;
+  display: inline-block;
+  font-size: 3.5em;
+  line-height: 100px;
+}
+@media (max-width: 600px) {
+  header .title {
+    font-size: 2.3em;
+  }
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  height: 75px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+footer .copyright {
+  line-height: 75px;
+}
+#main section {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  min-height: 100%;
+  position: relative;
+}
+#main section[data-id-section="1"] {
+  background-attachment: fixed;
+  background-image: url("../img/first-slide-background.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+#main section[data-id-section="2"] {
+  min-height: 300px;
+  display: none;
+}
+#main section[data-id-section="3"] {
+  background-attachment: fixed;
+  background-image: url("../img/third-slide-background.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+#main section[data-id-section="4"] {
+  min-height: 300px;
+  display: none;
+}
+#main section[data-id-section="5"] {
+  background-attachment: fixed;
+  background-image: url("../img/last-slide-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+#main section .card {
+  margin: 20px;
+  min-width: 280px;
+  max-width: 600px;
+  width: 100%;
+}
+#presentation .card-content {
+  text-align: center;
+  padding-top: 25px;
+}
+#presentation .card-content img {
+  padding: 10px 10px 40px 10px;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+  transform: rotate(-3deg);
+}
+#competences .category {
+  margin-top: 10px;
+}
+#competences .category .category-name {
+  font-size: 1.2em;
+}
+#contact .card-content > div {
+  padding: 10px 0;
+}
+#contact .contact-infos a {
+  text-decoration: none;
+  line-height: 1.5em;
+}
+#contact .contact-infos a::before {
+  color: #ffffff;
+}
+#contact .contact-infos .mail-link::before {
+  content: '\f0e0';
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  padding-right: 5px;
+}
+#contact .contact-infos .phone-link::before {
+  content: '\f095';
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  padding-right: 5px;
+}
+#contact .contact-infos .linkedin-link::before {
+  content: '\f08c';
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  padding-right: 5px;
+}
+#contact .cv-download .btn {
+  display: inline-block;
+  margin-top: 5px;
+}
+#contact .cv-download .btn > span::before {
+  content: '\f019';
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  padding-right: 5px;
+}
+.card {
+  background: #424242;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  padding: 20px;
+}
+.card .card-title {
+  color: #ffffff;
+  font-size: 2.9em;
+}
+.card .card-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2em;
+}
+.card-image {
+  background: #303030;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  width: 100px;
+  min-height: 80px;
+  text-align: center;
+  vertical-align: top;
+}
+.card-image .image-container {
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+}
+.card-image .image-container img {
+  max-height: 70px;
+  max-width: 70px;
+}
+.card-image .image-title {
+  font-size: 1em;
+  padding: 5px 0;
+}
+.card-image .image-detail {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.7em;
+}
+/*
+ *  CONTROLES
+ */
+ld-controls #buttons .btn {
+  float: left;
+  margin: 5px;
+}
+ld-controls #buttons h3 {
+  padding-top: 15px;
+  clear: both;
+}
+ld-controls code {
+  clear: both;
+  display: block;
+  background-color: #262626;
+  color: #fff;
+  margin: 5px;
+  padding: 5px 10px;
+}
